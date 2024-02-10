@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.904);
+            color: rgba(255, 255, 255, 0.946);
+            text-align: center;
+        }
+    </style>
+    <title>Testando os conhecimentos adiquiridos em sites</title>
+</head>
+<body>
+    
+
+    <main>
+        <h1>Utilize alguns dos nosso serviçoes rápidos</h1>
+        <section class="votacao">
+            <h2>Descrubra aqui se você pode votar ou não!</h2>
+            Ditgite sua idade: <input type="text" id="idade">
+            <button onclick="verificar_idade()">Enviar</button>
+            <h4>Sua situação é:</h4>
+            <h3 id="resultado_voto"></h3>
+        </section>
+    </main>
+
+    <script>
+        function verificar_idade(){
+            var idade = document.getElementById('idade')
+            var resultado = document.getElementById('resultado_voto')
+            var valor_idade = Number(idade.value)
+            if (valor_idade<=150 && valor_idade>=0){
+                if (valor_idade<16){
+                resultado.innerText= 'Não pode votar!'
+                } else if (valor_idade<18 || valor_idade>=65){
+                    resultado.innerText= 'Voto opicional!'
+                } else {
+                    resultado.innerText= 'Voto obrigatório!'
+                }
+            } else{
+                resultado.innerText= 'Idade inválida!'
+            }
+        }
+    </script>
+</body>
+</html>
