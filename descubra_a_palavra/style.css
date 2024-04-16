@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(2, 2, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.envio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    border-radius: 16px;
+    color: black;
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.box_palpite_passado {
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.palpites_passados {
+    text-transform: none;
+    width: 100%;
+}
+
+.visu,
+.box_palpite_passado {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}

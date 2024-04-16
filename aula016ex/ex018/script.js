@@ -56,4 +56,5 @@ function redefinir(){
     let digite = document.createElement('option')
     digite.text='Digite os números'
     seladicionado.appendChild(digite)
+    resultado.innerHTML=''
 }

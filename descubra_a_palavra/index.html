@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box_palpite_passado">
+            Palpites passados:
+            <div class="palpites_passados" id="palpites_passados">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="visu">
+                Aqui está palavra...
+            </div>
+
+            <div class="envio">
+                <input type="text" id="palpite" maxlength="1" minlength="1" placeholder="Digite uma letra">
+                <button id="btn_palpite">Enviar palpite</button>
+                <button id="btn_redefinir" onclick="redefinir()">Redefinir</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
