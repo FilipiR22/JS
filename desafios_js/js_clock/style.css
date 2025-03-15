@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .1s;
+}
+
+body,html{
+    height: 100%;
+}
+
+body,.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid rgb(153, 153, 153);
+    position: relative;
+}
+
+.points{
+    height: 5px;
+    border-radius: 10px;
+    transform-origin: 100%;
+    transform: translateX(-10px);
+    background-color: black;
+}
+
+#minutes,#hour{
+    transform-origin: 0% !important;
+}
+
+#minutes{
+    width: 48%;
+}
+
+#seconds{
+    width: 48%;
+}
+
+#hour{
+    position: absolute;
+    left:50%;
+    width: 30%;
+    transform: translateX(-2px);
+}
+.show-hour{
+    font-size: 3rem;
+}
